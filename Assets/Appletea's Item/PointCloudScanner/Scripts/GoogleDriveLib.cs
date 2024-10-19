@@ -17,6 +17,7 @@ namespace Appletea.Dev.PointCloud
         // Key
         private string JSON_FILE;
         // Google Drive Directory
+        [SerializeField]
         private const string GOOGLE_DRIVE_FOLDER_ID = "1tWhtxDBCYJfBwfclj7FX4OjDDnTB2g_Q";
         // Upload Filepath
         private string FILE_PATH;
@@ -30,7 +31,7 @@ namespace Appletea.Dev.PointCloud
 
             // ”FØî•ñ‚ğæ“¾
             GoogleCredential credential;
-            using (var stream = BetterStreamingAssets.OpenRead("depth-scanner-project-de9fb365d1d8.json"))
+            using (var stream = BetterStreamingAssets.OpenRead("Authentication_private_key.json"))
             {
                 credential = GoogleCredential.FromStream(stream).CreateScoped(DriveService.ScopeConstants.Drive);
             }
