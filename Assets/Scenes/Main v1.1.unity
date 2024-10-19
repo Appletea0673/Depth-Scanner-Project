@@ -1404,12 +1404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e38df5678b37d6429ef2446d3589e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactorView: {fileID: 1628591572}
-  _renderer: {fileID: 133735088}
-  _normalColor: {r: 1, g: 1, b: 1, a: 0.15686275}
-  _hoverColor: {r: 0, g: 0, b: 1, a: 0.16862746}
-  _selectColor: {r: 0, g: 1, b: 0.048936844, a: 0.19607843}
-  _disabledColor: {r: 0, g: 0, b: 0, a: 0.019607844}
 --- !u!23 &133735088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2000,12 +1994,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e38df5678b37d6429ef2446d3589e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactorView: {fileID: 2032151538}
-  _renderer: {fileID: 207333639}
-  _normalColor: {r: 1, g: 1, b: 1, a: 0.15686275}
-  _hoverColor: {r: 0, g: 0, b: 1, a: 0.16862746}
-  _selectColor: {r: 0, g: 1, b: 0.048936844, a: 0.19607843}
-  _disabledColor: {r: 0, g: 0, b: 0, a: 0.019607844}
 --- !u!23 &207333639
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2472,14 +2460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e48d93b64a9ae4f9fd5a728c8f51af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 242794291}
-  _vectorProperties:
-  - name: _WristLocalOffset
-    value: {x: 0.018, y: -0.01, z: 0, w: 1}
-  _colorProperties: []
-  _floatProperties: []
-  _updateEveryFrame: 1
 --- !u!137 &242794291
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -2967,9 +2947,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488896fe86105104a8453d9f173cf62a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 2032151539}
-  _offset: {x: 0, y: 0, z: 0.04}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!4 &268616074
 Transform:
   m_ObjectHideFlags: 0
@@ -3343,7 +3320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a52cc62b98662b4e9ac356027b2b070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
 --- !u!4 &333058136
 Transform:
   m_ObjectHideFlags: 0
@@ -3388,8 +3364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae43f25c06eb2d9408a201216b4c3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
-  _hmd: {fileID: 0}
 --- !u!4 &333432978
 Transform:
   m_ObjectHideFlags: 0
@@ -3562,9 +3536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2303af7d4c7114681742031c4a0ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 1628591573}
-  _controllerButtonUsage: 16
-  _requireButtonUsages: 0
 --- !u!4 &344840755
 Transform:
   m_ObjectHideFlags: 0
@@ -3727,8 +3698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae43f25c06eb2d9408a201216b4c3ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
-  _hmd: {fileID: 0}
 --- !u!4 &360862023
 Transform:
   m_ObjectHideFlags: 0
@@ -3789,10 +3758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ea23b9fd13af40afe326bb23ac1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
-  _offset: {x: -0.1, y: -0.035, z: 0}
-  _rotation: {x: 0.105225, y: -0.6678412, z: 0.013933297, w: 0.7366965}
-  _mirrorLeftRotation: 1
 --- !u!1 &366930776
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,10 +4220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a379f34d4f4f2e408d34f14bfb753ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 690570386}
-  _iModifyDataFromSourceMono: {fileID: 690570386}
-  _applyModifier: 0
 --- !u!114 &418336479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4271,7 +4232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebfb74b97b000d4899abbd61f49aa40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 418336478}
 --- !u!4 &418336480
 Transform:
   m_ObjectHideFlags: 0
@@ -4435,7 +4395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a52cc62b98662b4e9ac356027b2b070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
 --- !u!4 &425857754
 Transform:
   m_ObjectHideFlags: 0
@@ -4898,7 +4857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a52cc62b98662b4e9ac356027b2b070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
 --- !u!4 &476349676
 Transform:
   m_ObjectHideFlags: 0
@@ -5051,7 +5009,7 @@ MonoBehaviour:
   useRotationTracking: 1
   useIPDInPositionTracking: 1
   resetTrackerOnLoad: 0
-  AllowRecenter: 1
+  AllowRecenter: 0
   LateControllerUpdate: 1
   LateLatching: 0
   controllerDrivenHandPosesType: 0
@@ -5437,12 +5395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f273abee0604ad2409c9bbc9a60e461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 0
-  _updateAfter: {fileID: 0}
-  _cameraRigRef: {fileID: 1718674487}
-  _processLateUpdates: 0
-  _useOvrManagerEmulatedPose: 0
-  _trackingToWorldTransformer: {fileID: 1718674486}
 --- !u!1 &539810292
 GameObject:
   m_ObjectHideFlags: 0
@@ -6719,11 +6671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcebab82b3c5dd4fac023079b7fed29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 690570387}
-  _iModifyDataFromSourceMono: {fileID: 690570387}
-  _applyModifier: 1
-  _filterParameters: {fileID: 0}
 --- !u!114 &690570387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6736,10 +6683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7daff26e66096cd49a253ca3ab592c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 1871968374}
-  _iModifyDataFromSourceMono: {fileID: 1871968374}
-  _applyModifier: 1
 --- !u!4 &690570388
 Transform:
   m_ObjectHideFlags: 0
@@ -7292,11 +7235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcebab82b3c5dd4fac023079b7fed29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 764714481}
-  _iModifyDataFromSourceMono: {fileID: 764714481}
-  _applyModifier: 1
-  _filterParameters: {fileID: 0}
 --- !u!114 &764714481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7309,10 +7247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7daff26e66096cd49a253ca3ab592c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 1117497609}
-  _iModifyDataFromSourceMono: {fileID: 1117497609}
-  _applyModifier: 1
 --- !u!4 &764714482
 Transform:
   m_ObjectHideFlags: 0
@@ -7497,8 +7431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb5e919275d29245bba9a1f0e849e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 1551088096}
-  _ovrControllerHelper: {fileID: 2084275964}
 --- !u!1 &801325055
 GameObject:
   m_ObjectHideFlags: 0
@@ -7745,12 +7677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6b94f7bc105c24ea3746dc4141a7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 0
-  _updateAfter: {fileID: 0}
-  _cameraRigRef: {fileID: 1718674487}
-  _processLateUpdates: 0
-  _handedness: 1
-  _trackingToWorldTransformer: {fileID: 1718674486}
 --- !u!4 &821823723
 Transform:
   m_ObjectHideFlags: 0
@@ -7978,10 +7904,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae60cfa43388e449a7518f36418f81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 821823722}
-  _iModifyDataFromSourceMono: {fileID: 821823722}
-  _applyModifier: 0
 --- !u!114 &857562939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7994,7 +7916,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2cb428b733e56478338c736189a0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 857562938}
 --- !u!1 &859226724
 GameObject:
   m_ObjectHideFlags: 0
@@ -8644,7 +8565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a52cc62b98662b4e9ac356027b2b070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
 --- !u!114 &956951960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8657,10 +8577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ea23b9fd13af40afe326bb23ac1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
-  _offset: {x: -0.11, y: -0.075, z: -0.02}
-  _rotation: {x: 0.105225, y: -0.6678412, z: 0.013933297, w: 0.7366965}
-  _mirrorLeftRotation: 1
 --- !u!4 &956951961
 Transform:
   m_ObjectHideFlags: 0
@@ -8786,10 +8702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ea23b9fd13af40afe326bb23ac1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
-  _offset: {x: 0, y: 0, z: 0}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _mirrorLeftRotation: 0
 --- !u!1 &981668775
 GameObject:
   m_ObjectHideFlags: 0
@@ -9078,8 +8990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2412d6d784007cf409d79410b6fd915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: 66
-  _axis2D: 5
 --- !u!1 &1009028511
 GameObject:
   m_ObjectHideFlags: 0
@@ -9979,14 +9889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4855895ba1c44959a306beb7ae318fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 0
-  _updateAfter: {fileID: 0}
-  _cameraRigRef: {fileID: 1718674487}
-  _processLateUpdates: 0
-  _handedness: 0
-  _ovrHand: {fileID: 0}
-  _trackingToWorldTransformer: {fileID: 1718674486}
-  _handSkeletonProvider: {fileID: 1425876345}
 --- !u!4 &1117497610
 Transform:
   m_ObjectHideFlags: 0
@@ -10848,38 +10750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1203914193
 GameObject:
   m_ObjectHideFlags: 0
@@ -11235,8 +11105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb5e919275d29245bba9a1f0e849e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 857562938}
-  _ovrControllerHelper: {fileID: 1718867198}
 --- !u!1 &1275232089
 GameObject:
   m_ObjectHideFlags: 0
@@ -11368,8 +11236,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff26c21ac005534e8af75f8427be9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handGrabState: {fileID: 1884715268}
-  _syntheticHand: {fileID: 0}
 --- !u!1 &1286183827
 GameObject:
   m_ObjectHideFlags: 0
@@ -11495,10 +11361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a379f34d4f4f2e408d34f14bfb753ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 764714480}
-  _iModifyDataFromSourceMono: {fileID: 764714480}
-  _applyModifier: 0
 --- !u!114 &1299125139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11511,7 +11373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebfb74b97b000d4899abbd61f49aa40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1299125138}
 --- !u!4 &1299125140
 Transform:
   m_ObjectHideFlags: 0
@@ -11560,12 +11421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6b94f7bc105c24ea3746dc4141a7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 0
-  _updateAfter: {fileID: 0}
-  _cameraRigRef: {fileID: 1718674487}
-  _processLateUpdates: 0
-  _handedness: 0
-  _trackingToWorldTransformer: {fileID: 1718674486}
 --- !u!4 &1303427106
 Transform:
   m_ObjectHideFlags: 0
@@ -11689,167 +11544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c67033f580359c4581dff1ccffcca91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 4
-  _updateAfter: {fileID: 0}
-  _iModifyDataFromSourceMono: {fileID: 1299125138}
-  _applyModifier: 1
-  _wristPositionLockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _wristPositionUnlockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _wristRotationLockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _wristRotationUnlockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _jointLockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _jointUnlockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _spreadAllowance: 5
 --- !u!114 &1317610030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12371,18 +12065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8667bbf66117438986bafc711f920ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handGrabInteractor: {fileID: 1884715268}
-  _handVisual: {fileID: 0}
-  _handRenderer: {fileID: 0}
-  _materialEditor: {fileID: 0}
-  _glowColorGrabing: {r: 1, g: 1, b: 1, a: 0}
-  _glowColorHover: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
-  _colorChangeSpeed: 0.5
-  _glowFadeStartTime: 0.2
-  _glowStrengthChangeSpeed: 0.5
-  _fadeOut: 0
-  _gradientLength: 0.85
-  _glowType: 28
 --- !u!1 &1366393762
 GameObject:
   m_ObjectHideFlags: 0
@@ -12774,9 +12456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488896fe86105104a8453d9f173cf62a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 1628591573}
-  _offset: {x: 0, y: 0, z: 0.04}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!4 &1386592890
 Transform:
   m_ObjectHideFlags: 0
@@ -12928,38 +12607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1401353414
 GameObject:
   m_ObjectHideFlags: 0
@@ -13073,10 +12720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2606bf2f0c914a7aba4390f29ba2eb6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 532222886}
-  _iModifyDataFromSourceMono: {fileID: 532222886}
-  _applyModifier: 0
 --- !u!1 &1408581885
 GameObject:
   m_ObjectHideFlags: 0
@@ -13625,7 +13268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dffc2a801520fb4cbe2c11894faf431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 418336478}
 --- !u!1 &1485572817
 GameObject:
   m_ObjectHideFlags: 0
@@ -13722,38 +13364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1488422201
 GameObject:
   m_ObjectHideFlags: 0
@@ -13805,7 +13415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a52cc62b98662b4e9ac356027b2b070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
 --- !u!4 &1488422204
 Transform:
   m_ObjectHideFlags: 0
@@ -14144,8 +13753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2412d6d784007cf409d79410b6fd915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: 33
-  _axis2D: 5
 --- !u!1 &1522527979
 GameObject:
   m_ObjectHideFlags: 0
@@ -14190,18 +13797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8667bbf66117438986bafc711f920ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handGrabInteractor: {fileID: 1775524721}
-  _handVisual: {fileID: 0}
-  _handRenderer: {fileID: 0}
-  _materialEditor: {fileID: 0}
-  _glowColorGrabing: {r: 1, g: 1, b: 1, a: 0}
-  _glowColorHover: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
-  _colorChangeSpeed: 0.5
-  _glowFadeStartTime: 0.2
-  _glowStrengthChangeSpeed: 0.5
-  _fadeOut: 0
-  _gradientLength: 0.85
-  _glowType: 28
 --- !u!1 &1522989330
 GameObject:
   m_ObjectHideFlags: 0
@@ -14311,17 +13906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1536930580}
-  _rigidbody: {fileID: 859226730}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 0
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
-  _physicsGrabbable: {fileID: 0}
 --- !u!114 &1536930579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14334,35 +13918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1536930580}
-  _rigidbody: {fileID: 859226730}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _scoringModifier:
-    _positionRotationWeight: 0.5
-  _slippiness: 0
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 0
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 1
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 0
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 0
-  _handGrabPoses: []
 --- !u!114 &1536930580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14375,16 +13930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 859226729}
-  _maxGrabPoints: -1
-  _rigidbody: {fileID: 859226730}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
 --- !u!114 &1536930581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14633,10 +14178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae60cfa43388e449a7518f36418f81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 8
-  _updateAfter: {fileID: 1303427105}
-  _iModifyDataFromSourceMono: {fileID: 1303427105}
-  _applyModifier: 0
 --- !u!114 &1551088097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14649,7 +14190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2cb428b733e56478338c736189a0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 1551088096}
 --- !u!1 &1560575637
 GameObject:
   m_ObjectHideFlags: 0
@@ -14729,8 +14269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff26c21ac005534e8af75f8427be9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handGrabState: {fileID: 1775524721}
-  _syntheticHand: {fileID: 0}
 --- !u!1 &1568410273
 GameObject:
   m_ObjectHideFlags: 0
@@ -15471,7 +15009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dffc2a801520fb4cbe2c11894faf431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1299125138}
 --- !u!1 &1627776142
 GameObject:
   m_ObjectHideFlags: 0
@@ -15552,16 +15089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb743c666c1ab34e928a0b62c2fa862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 0}
-  _interactableFilters: []
-  _candidateTiebreaker: {fileID: 0}
-  _maxIterationsPerFrame: 1
-  _data: {fileID: 0}
-  _selector: {fileID: 344840754}
-  _rigidbody: {fileID: 1386592887}
-  _grabCenter: {fileID: 1386592890}
-  _grabTarget: {fileID: 0}
-  _velocityCalculator: {fileID: 0}
 --- !u!114 &1628591573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15574,7 +15101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3673df66324d8f34d9433049c54de631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 1551088096}
 --- !u!114 &1628591574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15587,10 +15113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194b7d1054b8fa64b9bdcea46d06c3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 1628591573}
-  _includeChildrenAsDependents: 1
-  _gameObjects: []
-  _monoBehaviours: []
 --- !u!1 &1631177416
 GameObject:
   m_ObjectHideFlags: 0
@@ -15854,37 +15376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af9ea683544b184083cef283557012d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 2119741664}
-  _updateRootPose: 1
-  _updateRootScale: 1
-  _skinnedMeshRenderer: {fileID: 1895847993}
-  _root: {fileID: 0}
-  _handMaterialPropertyBlockEditor: {fileID: 1895847992}
-  _jointTransforms:
-  - {fileID: 1993737548}
-  - {fileID: 110184407}
-  - {fileID: 2137237928}
-  - {fileID: 1818188555}
-  - {fileID: 619522928}
-  - {fileID: 98320878}
-  - {fileID: 1243850843}
-  - {fileID: 1144700188}
-  - {fileID: 336213735}
-  - {fileID: 1926546988}
-  - {fileID: 10112739}
-  - {fileID: 973265693}
-  - {fileID: 1835388297}
-  - {fileID: 1820900171}
-  - {fileID: 1788509337}
-  - {fileID: 1769116115}
-  - {fileID: 1378761007}
-  - {fileID: 303414813}
-  - {fileID: 590984200}
-  - {fileID: 341914397}
-  - {fileID: 768424479}
-  - {fileID: 512308415}
-  - {fileID: 601745055}
-  - {fileID: 2040567058}
 --- !u!1 &1668918842
 GameObject:
   m_ObjectHideFlags: 0
@@ -16476,7 +15967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998a5646185efb9488265f3a2f35a99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraRigRef: {fileID: 1718674487}
 --- !u!114 &1718674487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16489,8 +15979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b47e36715521d4e8a30d2c5b6e83e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ovrCameraRig: {fileID: 489034915}
-  _requireOvrHands: 1
 --- !u!114 &1718674488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17204,22 +16692,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9067480af55f5874d8f613b16812f968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 1775524722}
-  _interactableFilters: []
-  _candidateTiebreaker: {fileID: 0}
-  _maxIterationsPerFrame: 3
-  _data: {fileID: 0}
-  _hand: {fileID: 1775524722}
-  _rigidbody: {fileID: 1699543612}
-  _handGrabApi: {fileID: 333432977}
-  _supportedGrabTypes: -1
-  _hoverOnZeroStrength: 0
-  _grabOrigin: {fileID: 1800141088}
-  _gripPoint: {fileID: 362404121}
-  _gripCollider: {fileID: 476349674}
-  _pinchPoint: {fileID: 2053084137}
-  _pinchCollider: {fileID: 425857752}
-  _velocityCalculator: {fileID: 0}
 --- !u!114 &1775524722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17232,7 +16704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14164f8f23faae4293baeb84485b3d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1299125138}
 --- !u!114 &1775524723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17245,8 +16716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583661762464e2746beccb4868689e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 1775524721}
-  _hand: {fileID: 1775524722}
 --- !u!114 &1775524724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17259,10 +16728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194b7d1054b8fa64b9bdcea46d06c3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 1775524722}
-  _includeChildrenAsDependents: 1
-  _gameObjects: []
-  _monoBehaviours: []
 --- !u!1 &1777968129
 GameObject:
   m_ObjectHideFlags: 0
@@ -17348,7 +16813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a52cc62b98662b4e9ac356027b2b070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
 --- !u!114 &1785600461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17361,10 +16825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ea23b9fd13af40afe326bb23ac1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
-  _offset: {x: -0.11, y: -0.075, z: -0.02}
-  _rotation: {x: 0.105225, y: -0.6678412, z: 0.013933297, w: 0.7366965}
-  _mirrorLeftRotation: 1
 --- !u!4 &1785600462
 Transform:
   m_ObjectHideFlags: 0
@@ -17427,17 +16887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1788025823}
-  _rigidbody: {fileID: 366930782}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 0
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
-  _physicsGrabbable: {fileID: 0}
 --- !u!114 &1788025822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17450,35 +16899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1788025823}
-  _rigidbody: {fileID: 366930782}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _scoringModifier:
-    _positionRotationWeight: 0.5
-  _slippiness: 0
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 0
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 1
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 0
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 0
-  _handGrabPoses: []
 --- !u!114 &1788025823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17491,16 +16911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 1
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 859226729}
-  _maxGrabPoints: -1
-  _rigidbody: {fileID: 366930782}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
 --- !u!114 &1788025824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17666,10 +17076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ea23b9fd13af40afe326bb23ac1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
-  _offset: {x: 0, y: 0, z: 0}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _mirrorLeftRotation: 0
 --- !u!1 &1818188554
 GameObject:
   m_ObjectHideFlags: 0
@@ -17978,9 +17384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2beb69c900ccf4984646ad420b1e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
-  _handGrabApi: {fileID: 360862022}
-  _collider: {fileID: 1785600459}
 --- !u!1 &1845044262
 GameObject:
   m_ObjectHideFlags: 0
@@ -18136,14 +17539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4855895ba1c44959a306beb7ae318fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 0
-  _updateAfter: {fileID: 0}
-  _cameraRigRef: {fileID: 1718674487}
-  _processLateUpdates: 0
-  _handedness: 1
-  _ovrHand: {fileID: 0}
-  _trackingToWorldTransformer: {fileID: 1718674486}
-  _handSkeletonProvider: {fileID: 1425876345}
 --- !u!4 &1871968375
 Transform:
   m_ObjectHideFlags: 0
@@ -18277,22 +17672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9067480af55f5874d8f613b16812f968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 1884715269}
-  _interactableFilters: []
-  _candidateTiebreaker: {fileID: 0}
-  _maxIterationsPerFrame: 3
-  _data: {fileID: 0}
-  _hand: {fileID: 1884715269}
-  _rigidbody: {fileID: 255371895}
-  _handGrabApi: {fileID: 360862022}
-  _supportedGrabTypes: -1
-  _hoverOnZeroStrength: 0
-  _grabOrigin: {fileID: 980885281}
-  _gripPoint: {fileID: 1998635355}
-  _gripCollider: {fileID: 333058134}
-  _pinchPoint: {fileID: 1844573734}
-  _pinchCollider: {fileID: 1488422202}
-  _velocityCalculator: {fileID: 0}
 --- !u!114 &1884715269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18305,7 +17684,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14164f8f23faae4293baeb84485b3d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 418336478}
 --- !u!114 &1884715270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18318,8 +17696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583661762464e2746beccb4868689e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 1884715268}
-  _hand: {fileID: 1884715269}
 --- !u!114 &1884715271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18332,10 +17708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194b7d1054b8fa64b9bdcea46d06c3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 1884715269}
-  _includeChildrenAsDependents: 1
-  _gameObjects: []
-  _monoBehaviours: []
 --- !u!1001 &1888335902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18752,14 +18124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e48d93b64a9ae4f9fd5a728c8f51af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 1895847993}
-  _vectorProperties:
-  - name: _WristLocalOffset
-    value: {x: -0.018, y: 0.01, z: 0, w: 1}
-  _colorProperties: []
-  _floatProperties: []
-  _updateEveryFrame: 1
 --- !u!137 &1895847993
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -19578,10 +18942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ea23b9fd13af40afe326bb23ac1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1884715269}
-  _offset: {x: -0.1, y: -0.035, z: 0}
-  _rotation: {x: 0.105225, y: -0.6678412, z: 0.013933297, w: 0.7366965}
-  _mirrorLeftRotation: 1
 --- !u!1 &2005077112
 GameObject:
   m_ObjectHideFlags: 0
@@ -19935,16 +19295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb743c666c1ab34e928a0b62c2fa862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 0}
-  _interactableFilters: []
-  _candidateTiebreaker: {fileID: 0}
-  _maxIterationsPerFrame: 1
-  _data: {fileID: 0}
-  _selector: {fileID: 2122431139}
-  _rigidbody: {fileID: 268616071}
-  _grabCenter: {fileID: 268616074}
-  _grabTarget: {fileID: 0}
-  _velocityCalculator: {fileID: 0}
 --- !u!114 &2032151539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19957,7 +19307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3673df66324d8f34d9433049c54de631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 857562938}
 --- !u!114 &2032151540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19970,10 +19319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194b7d1054b8fa64b9bdcea46d06c3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 2032151539}
-  _includeChildrenAsDependents: 1
-  _gameObjects: []
-  _monoBehaviours: []
 --- !u!1 &2035771911
 GameObject:
   m_ObjectHideFlags: 0
@@ -20144,9 +19489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2beb69c900ccf4984646ad420b1e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1775524722}
-  _handGrabApi: {fileID: 333432977}
-  _collider: {fileID: 956951958}
 --- !u!1 &2055280706
 GameObject:
   m_ObjectHideFlags: 0
@@ -21028,167 +20370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c67033f580359c4581dff1ccffcca91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateMode: 4
-  _updateAfter: {fileID: 0}
-  _iModifyDataFromSourceMono: {fileID: 418336478}
-  _applyModifier: 1
-  _wristPositionLockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _wristPositionUnlockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _wristRotationLockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _wristRotationUnlockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _jointLockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _jointUnlockCurve:
-    _animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _animationLength: 0.1
-  _spreadAllowance: 5
 --- !u!114 &2119741665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21236,9 +20417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2303af7d4c7114681742031c4a0ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 2032151539}
-  _controllerButtonUsage: 16
-  _requireButtonUsages: 0
 --- !u!4 &2122431140
 Transform:
   m_ObjectHideFlags: 0
@@ -21393,37 +20571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af9ea683544b184083cef283557012d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hand: {fileID: 1317610029}
-  _updateRootPose: 1
-  _updateRootScale: 1
-  _skinnedMeshRenderer: {fileID: 242794291}
-  _root: {fileID: 0}
-  _handMaterialPropertyBlockEditor: {fileID: 242794290}
-  _jointTransforms:
-  - {fileID: 2005077113}
-  - {fileID: 1568410274}
-  - {fileID: 202809143}
-  - {fileID: 257494441}
-  - {fileID: 1690939609}
-  - {fileID: 1560575638}
-  - {fileID: 2058487277}
-  - {fileID: 98871002}
-  - {fileID: 1789515782}
-  - {fileID: 989525005}
-  - {fileID: 1286183828}
-  - {fileID: 1876820396}
-  - {fileID: 1848788586}
-  - {fileID: 686214413}
-  - {fileID: 2058725803}
-  - {fileID: 589620068}
-  - {fileID: 1088726771}
-  - {fileID: 922641532}
-  - {fileID: 561476020}
-  - {fileID: 616826440}
-  - {fileID: 123475850}
-  - {fileID: 843835351}
-  - {fileID: 430966530}
-  - {fileID: 258825580}
 --- !u!1 &2140560462
 GameObject:
   m_ObjectHideFlags: 0

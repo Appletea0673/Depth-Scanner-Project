@@ -86,8 +86,8 @@ namespace Appletea.Dev.PointCloud
         {
             while (true)
             {
+                Debug.Log("Scanning...");
                 ScanAndStorePointCloud(((int)density), pointsData);
-
                 List<Vector3> points = pointsData.GetPointsInRadius(mainCamera.transform.position, renderingRadius, maxChunkCount);
                 //List<Vector3> points = pointsData.GetAllPoints();
                 pointCloudRenderer.UpdatePointCloud(points);
