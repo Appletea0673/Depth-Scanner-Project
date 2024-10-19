@@ -73,3 +73,4 @@ crashlytics-build.properties
 
 # Authentication private key
 /[Aa]ssets/[Ss]treamingAssets/Authentication_private_key.json
+/[Aa]ssets/[Ss]treamingAssets/Authentication_private_key.json.meta
