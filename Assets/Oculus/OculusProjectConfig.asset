@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d394ae2a81edd4cbc3c51917e766e3, type: 3}
   m_Name: OculusProjectConfig
   m_EditorClassIdentifier: 
-  targetDeviceTypes: 0400000005000000
-  allowOptional3DofHeadTracking: 0
+  targetDeviceTypes: 04000000
+  allowOptional3DofHeadTracking: 1
   handTrackingSupport: 1
   handTrackingFrequency: 1
   handTrackingVersion: 2
@@ -41,3 +41,5 @@ MonoBehaviour:
   systemSplashScreen: {fileID: 0}
   systemSplashScreenType: 0
   _systemLoadingScreenBackground: 1
+  ovrPluginMd5Win64: f41e5927c8b0ba3e4ce52995d5460d490323d22d047d6489de5b1ce2b63206c5
+  ovrPluginMd5Android: beeab9b00bb400454965db62a9ec5f87fc0c5f323fe8f8c20947f9fcbc8a509e

@@ -18,7 +18,7 @@ namespace Appletea.Dev.PointCloud
         private string JSON_FILE;
         // Google Drive Directory
         [SerializeField]
-        private const string GOOGLE_DRIVE_FOLDER_ID = "1tWhtxDBCYJfBwfclj7FX4OjDDnTB2g_Q";
+        private string GOOGLE_DRIVE_FOLDER_ID = "1tWhtxDBCYJfBwfclj7FX4OjDDnTB2g_Q";
         // Upload Filepath
         private string FILE_PATH;
 
