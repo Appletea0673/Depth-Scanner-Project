@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Google.Apis</id>
+    <version>1.68.0</version>
+    <title>Google APIs Client Library</title>
+    <authors>Google LLC</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>NuGetIcon.png</icon>
+    <projectUrl>https://github.com/googleapis/google-api-dotnet-client</projectUrl>
+    <iconUrl>https://www.gstatic.com/images/branding/product/1x/google_developers_64dp.png</iconUrl>
+    <description>The Google APIs Client Library is a runtime client for working with Google services.
+The library supports service requests, media upload and download, etc.</description>
+    <copyright>Copyright 2021 Google LLC</copyright>
+    <tags>Google</tags>
+    <repository type="git" url="https://github.com/googleapis/google-api-dotnet-client" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="Google.Apis.Core" version="1.68.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Google.Apis.Core" version="1.68.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Google.Apis.Core" version="1.68.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.6.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

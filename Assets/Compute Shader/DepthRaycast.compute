@@ -1,0 +1,89 @@
+#pragma kernel CSMain
+
+struct RaycastResult {
+  float3 Result[2];
+};
+
+StructuredBuffer<float2> RaycastRequests;
+RWStructuredBuffer<RaycastResult> RaycastResults;
+
+Texture2DArray<float> _EnvironmentDepthTexture;
+
+float4x4 _EnvironmentDepthReprojectionMatrices[2];
+float4 _EnvironmentDepthZBufferParams;
+float4 _ZBufferParams;
+float4x4 unity_StereoMatrixInvVP[2];
+
+float SampleEnvironmentDepth(const float2 uv, const int slice)
+{
+  const float4 reprojectedUV = mul(_EnvironmentDepthReprojectionMatrices[slice], float4(uv.x, uv.y, 0.0, 1.0));
+
+  // Adjust the UV coordinates based on the new reprojection matrix
+  const float2 adjustedUV = reprojectedUV.xy / reprojectedUV.w;
+  const uint3 depthtextureuv = uint3(adjustedUV.x * 512, adjustedUV.y * 512, 0);
+  
+  // depth z buffer value
+  const float inputDepthEye = _EnvironmentDepthTexture[depthtextureuv];
+
+  const float inputDepthNdc = inputDepthEye * 2.0 - 1.0;
+  const float envLinearDepth = (1.0f / (inputDepthNdc + _EnvironmentDepthZBufferParams.y)) * _EnvironmentDepthZBufferParams.x;
+
+  // depth camera z buffer
+  float envDepth = (1 - envLinearDepth * _ZBufferParams.w) / (envLinearDepth * _ZBufferParams.z);
+
+  return envDepth;
+}
+
+float4 ComputeClipSpacePosition(float2 positionNDC, float deviceDepth)
+{
+    float4 positionCS = float4(positionNDC * 2.0 - 1.0, deviceDepth, 1.0);
+
+    return positionCS;
+}
+
+float3 ComputeWorldSpacePosition(float2 positionNDC, float deviceDepth, float4x4 invViewProjMatrix)
+{
+    float4 positionCS  = ComputeClipSpacePosition(positionNDC, deviceDepth);
+    float4 hpositionWS = mul(invViewProjMatrix, positionCS);
+    return hpositionWS.xyz / hpositionWS.w;
+}
+
+// https://gist.github.com/bgolus/a07ed65602c009d5e2f753826e8078a0
+float3 ComputeWorldSpaceNormal(float2 uv, const int slice) {
+  // get current pixel's view space position
+  float3 viewSpacePos_c = ComputeWorldSpacePosition(uv, SampleEnvironmentDepth(uv, slice), unity_StereoMatrixInvVP[slice]);
+
+  // TODO: fix hardcoded screen space
+  float2 offsetTexSpace = 6.0f / 512.0f;
+
+  // get view space position at 1 pixel offsets in each major direction
+  float2 offsetUV = uv + float2(1.0, 0.0) * offsetTexSpace;
+  float3 viewSpacePos_r = ComputeWorldSpacePosition(offsetUV, SampleEnvironmentDepth(offsetUV, slice), unity_StereoMatrixInvVP[slice]);
+
+  offsetUV = uv + float2(0.0, 1.0) * offsetTexSpace;
+  float3 viewSpacePos_u = ComputeWorldSpacePosition(offsetUV, SampleEnvironmentDepth(offsetUV, slice), unity_StereoMatrixInvVP[slice]);
+
+  // get the difference between the current and each offset position
+  float3 hDeriv = viewSpacePos_r - viewSpacePos_c;
+  float3 vDeriv = viewSpacePos_u - viewSpacePos_c;
+
+  // get view space normal from the cross product of the diffs
+  float3 viewNormal = normalize(cross(hDeriv, vDeriv));
+
+  return viewNormal;
+}
+
+// depending on the use case workgroup amount can be optimized for better performance
+[numthreads(32,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    const uint slice = 0;
+
+    float2 raycastPosition = RaycastRequests[id.x];
+
+    float envDepth = SampleEnvironmentDepth(raycastPosition, slice);
+    float3 worldPos = ComputeWorldSpacePosition(raycastPosition, envDepth, unity_StereoMatrixInvVP[slice]);
+
+    RaycastResults[id.x].Result[0] = float4(worldPos, envDepth);
+    RaycastResults[id.x].Result[1] = -ComputeWorldSpaceNormal(raycastPosition, slice);
+}
