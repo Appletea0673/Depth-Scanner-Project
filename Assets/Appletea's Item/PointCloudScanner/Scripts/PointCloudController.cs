@@ -4,6 +4,7 @@ using System.IO;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.Android;
+using Meta.XR;
 
 namespace Appletea.Dev.PointCloud
 {
@@ -22,7 +23,7 @@ namespace Appletea.Dev.PointCloud
         [SerializeField]
         private PointCloudRenderer pointCloudRenderer;
         [SerializeField]
-        private EnvironmentDepthAccess depthAccess;
+        private EnvironmentRaycastManager depthManager;
         [SerializeField]
         private GoogleDriveLib googledrive;
 
@@ -153,16 +154,29 @@ namespace Appletea.Dev.PointCloud
         //Culculate Point Cloud database by the depth raycast results
         void ScanAndStorePointCloud(int sampleSize, ChunkManager pointsData)
         {
+            // Generate Rays
             List<Vector2> viewSpaceCoords = GenerateViewSpaceCoords(sampleSize, sampleSize);
-            List<EnvironmentDepthAccess.DepthRaycastResult> results;
-            depthAccess.RaycastViewSpaceBlocking(viewSpaceCoords, out results);
+            List<Ray> rays = new List<Ray>();
+            foreach(Vector2 i in viewSpaceCoords)
+            {
+                rays.Add(mainCamera.ViewportPointToRay(new Vector3(i.x, i.y, 0)));
+            }
+
+            List<EnvironmentRaycastHit> results = new List<EnvironmentRaycastHit>();
+            foreach (Ray ray in rays)
+            {
+                EnvironmentRaycastHit result;
+                depthManager.Raycast(ray, out result);
+                results.Add(result);
+            }
+            
 
             //Randomize
             ListExtensions.Shuffle(results);
 
             foreach (var result in results)
             {
-                pointsData.AddPoint(result.Position);
+                pointsData.AddPoint(result.point);
             }
         }
     }
