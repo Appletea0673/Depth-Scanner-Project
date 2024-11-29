@@ -1,9 +1,9 @@
-# Depth Scanner - Meta Quest 3 LiDAR Scanner
+# Depth Scanner - Meta Quest 3 ToF Scanner
 
 ## 概要
-この Unity プロジェクトは、Meta Quest 3 VR ヘッドセットに搭載されているLiDARセンサーを利用して環境データをスキャンするアプリケーションです。<br>
+この Unity プロジェクトは、Meta Quest 3 VR ヘッドセットに搭載されているToFセンサーを利用して環境データをスキャンするアプリケーションです。<br>
 リアルタイムで周囲の環境を取得し、PLY形式の点群データとして出力することができます。<br>
-実際に使ってみた動画はこちら -> https://x.com/Appletea_VRC/status/1847573882238374147<br>
+実際に使ってみた動画はこちら -> [https://x.com/Appletea_VRC/status/1847573882238374147](https://x.com/Appletea_VRC/status/1861910477389086953)<br>
 動作環境:Unity 2022.3.43f1<br>
 使用ライブラリ:
  - Meta XR SDK
