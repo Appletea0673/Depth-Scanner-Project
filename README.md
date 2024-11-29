@@ -3,9 +3,13 @@
 ## 概要
 この Unity プロジェクトは、Meta Quest 3 VR ヘッドセットに搭載されているToFセンサーを利用して環境データをスキャンするアプリケーションです。<br>
 リアルタイムで周囲の環境を取得し、PLY形式の点群データとして出力することができます。<br>
-![](Images/Depth-Scanner_Demo.gif)
+
+| Sample  |  |
 |---|---|
+|  ![](Images/DepthScanner_1.png) | ![](Images/DepthScanner_2.png)  |
+| リアルタイムで点群を更新<br>人や手の動きも追跡可能  | 視認補助用グリッド搭載 |
 |  ![](Images/PointCloud_1.png) | ![](Images/PointCloud_2.png)  |
+| 上画像と同じ視点の点群データ  | 俯瞰視点の点群データ |
 
 実際に使ってみた動画はこちら -> [https://x.com/Appletea_VRC/status/1847573882238374147](https://x.com/Appletea_VRC/status/1861910477389086953)<br>
 動作環境:Unity 2022.3.43f1<br>
