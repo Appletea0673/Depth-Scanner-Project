@@ -43,6 +43,9 @@ namespace Appletea.Dev.PointCloud
         private float scanInterval = 1.0f;
         [SerializeField]
         private Density density = Density.medium;
+        [SerializeField]
+        [Tooltip("The limit is about 5m")]
+        private float maxScanDistance = 5;
 
         [Space(10)]
         [Header("Rendering Settings")]
@@ -151,7 +154,7 @@ namespace Appletea.Dev.PointCloud
         }
 
 
-        //Culculate Point Cloud database by the depth raycast results
+        // Culculate Point Cloud database by the depth raycast results
         void ScanAndStorePointCloud(int sampleSize, ChunkManager pointsData)
         {
             // Generate Rays
@@ -166,10 +169,12 @@ namespace Appletea.Dev.PointCloud
             foreach (Ray ray in rays)
             {
                 EnvironmentRaycastHit result;
-                depthManager.Raycast(ray, out result);
-                results.Add(result);
+                depthManager.Raycast(ray, out result, maxScanDistance);
+                
+                // Cutout distant points
+                if (Vector3.Distance(result.point, mainCamera.transform.position) < maxScanDistance)
+                    results.Add(result);
             }
-            
 
             //Randomize
             ListExtensions.Shuffle(results);
