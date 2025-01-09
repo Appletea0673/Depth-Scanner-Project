@@ -30,14 +30,16 @@ https://github.com/SebLague/Marching-Cubes
 https://github.com/Kuwamai/PointCloudShader
 
 ## 機構解説
-{: align="center"}
-![](Images/Depth Scanner System Schematic.png)
+![](Images/DepthScannerSystemSchematic.png)<br>
+<p align="center">
 システム概略図 System Schematic
+</p>
+
  - 概要<br>
   機構を大まかに分けると、
-  - Point Cloud Generator
-  - Data Manager
-  - Renderer<br>
+    - Point Cloud Generator
+    - Data Manager
+    - Renderer<br>
   の3つに分類できます。
  - Point Cloud Generator<br>
   旧バージョンではDepthAPIで取得したDepth TextureをScreen Spaceでサンプリングし深度情報を取り出し、Reverse Projection Matrixでサンプリング点に対応した位置座標を取得して点群を計算していましたが、DepthAPIにRaycastメソッドが追加されたことにより、Screen Spaceのサンプリング点から直接位置座標を計算しています。<br>
