@@ -34,7 +34,6 @@ namespace Appletea.Dev.PointCloud
         [SerializeField]
         private int maxPointsPerChunk = 256;
         [SerializeField]
-        [Tooltip("Percentage of the field of view")]
         private int initialPoolSize = 1000;
 
         [Space(10)]
